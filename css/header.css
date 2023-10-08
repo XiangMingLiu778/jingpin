@@ -1,0 +1,119 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    border-bottom:1px solid #e0e0e0;
+    z-index: 1000;
+}
+
+/* 头部导航 */
+header .header-topbar{
+    width: 100vw;
+    height: var(--hd-topbar-height);
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a#curLink{
+    display: inline-block;
+}
+
+a#curLink img{
+    width: var(--hd-topbar-img-width);
+}
+
+/* 页头wrapper容器 */
+header .header-wrapper{
+    width: 90%;
+    height: var(--hd-wrapper-height);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .header-wrapper #md-search{  
+    font-size: 14px;
+    /* font-weight: 500; */
+}
+
+header .header-wrapper a#logo{
+    width:115px;
+    padding-top: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+header .header-wrapper #logo img{  
+    width: 100%;
+    height: auto;
+}
+
+
+/* 响应适配大屏幕 谷歌浏览器 */
+    @media screen and (min-width: 769px){
+        header{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border: none;
+        }
+        /* 页头wrapper容器 */
+        header .header-wrapper{
+            height: 6.7708333333vw;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+    
+        header .header-wrapper a#logo{
+            width:12%;
+            padding-top: 0;
+            display: flex;
+            align-items: flex-start;
+        }
+    
+        header .header-wrapper #md-search{  
+            font-size: var(--hd-wrapper-md-search-fontsize);
+            font-weight: 500;
+            color: #000;
+        }
+    
+        /* 头部导航 */
+        header .header-topbar{
+            width: 100%;
+            height: var(--hd-topbar-pc-height);
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        a#curLink img{
+            width: var(--hd-topbar-pc-img-width);
+        }
+    
+    
+    }
+
+
+
+
+
+
+

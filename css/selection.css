@@ -1,0 +1,761 @@
+/* 门面 */
+#selection-menmian-container{
+    display: block;
+    width: 100%;
+}
+
+#selection-menmian-container #selection-menmian{
+    width: 100%;
+    height: var(--selector-menmian-height);
+    background-image: url("https://relx-website-new.oss-cn-zhangjiakou.aliyuncs.com//yueke/e2268cd12da4439095536f79ce6ec31c.jpg");
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+/* 文化展示部分 */
+.selection-wenhua-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--selection-wenhua-container-padding) 0 calc(var(--selection-wenhua-container-padding) / 2);
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+}
+
+/* 适配小屏幕 */
+.selection-wenhua-container .selection-wenhua-item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: var(--selection-wenhua-item-width);
+    margin:0 auto calc(var(--selection-wenhua-item-width) / 17);
+
+}
+
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.1;
+    & img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    & .selection-wenhua-item-box-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 14%;
+        color: rgb(253, 253, 253);
+
+        & div{
+            position: relative;
+            top: 68%;
+            left: 0;
+            width: 100%;
+
+            & h2{
+                font-size: 34px;
+                font-weight: 400;
+                margin-bottom: 25px;
+            }
+
+            & p{
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+        }
+
+        & img{
+            width: 109px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        & p{
+            font-size: 14px;
+        }
+    }
+
+}
+
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    height: 370px;
+    background-color: white;
+    & .selection-wenhua-item-box-content {
+        
+        & img{
+                width: 158px;
+                height: auto;
+                object-fit: cover;
+                margin-bottom: 20px;
+        }
+
+        & p{
+            font-size: 13px;
+            font-weight: 400;
+            color: #7b7b7b;
+            margin-bottom: 8px;
+        }
+        & div p{
+            color: #ffffff;
+            overflow-y: auto;
+        }
+    }
+}
+
+.selection-wenhua-container .selection-wenhua-about-our{
+    width: var(--selection-wenhua-item-width);
+    margin: 8vw auto 0;
+
+    & h2{
+        font-size: var(--about-our-font-size);
+        font-weight: 500;
+        margin-bottom: 6vw;
+        transform: translateY(90px);
+    }
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    & div .selection-wenhua-about-our-item{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 120px;
+        margin: 8px 0;
+        padding: 20px 40px;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        border-radius: 12px;
+        background-color: white;
+
+    }
+
+    & div .selection-wenhua-about-our-item h5{
+        float: left;
+        font-size: 70px;
+        color: #00AF98;
+        font-weight: 400;
+        padding-right: 14px;
+        font-family: Montserrat,apple-system,BlinkMacSystemFont,Helvetica,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+    }
+
+    & div .selection-wenhua-about-our-item div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & div .selection-wenhua-about-our-item div p{
+        margin:5px 0;
+    }
+
+    & div .selection-wenhua-about-our-item div p span{
+        color: #00AF98;
+    }
+
+    
+}
+
+.selection-jingli-our-container{
+    padding:5.7291vw 0 5.7291vw;
+}
+
+.selection-jingli-our-container .selection-jingli-our-box{
+    width: var(--selection-jingli-our-box-width);
+    margin:0 0 0 var(--selection-jingli-our-box-margin-left);
+    
+}
+
+.selection-jingli-our-container .selection-jingli-our-box .jingli-left-content{
+        display: flex;
+        width: 100%;
+        & .title{
+            font-size: var(--about-our-font-size);
+            font-weight: 500;
+            margin-bottom: 6vw;
+        }
+
+        & .control{
+            width: 100px;
+            height: auto;
+            margin:auto 0 auto auto;
+        }
+
+        & .control a{
+            display: inline-block;
+            width: 39px;
+            height: 39px;
+            color: #00AF98;
+            font-size: 22px;
+            text-align: center;
+            line-height: 35px;
+            border:2px solid #dde0e0;
+            border-radius: 50%;
+        }
+
+        & .control a:active{
+            border:2px solid #b9bdbd;
+            color: #232928;
+        }
+}
+
+.selection-jingli-our-container .selection-jingli-our-box .jingli-right-content{
+    width: calc(var(--selection-jingli-our-box-width)-var(--selection-jingli-our-box-margin-left));
+    padding-bottom: 45px;
+    & .swiper-wrapper .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        width: 245px;
+        height: 416px;
+        border-radius: 20px;
+        background-color: rgb(243, 246, 249);
+        margin-right: var(--jingli-slide-margin-right);
+        overflow: hidden;
+
+        & img{
+            width: 100%;
+            height: auto;
+            margin-top: auto;
+            object-fit: cover;
+        }
+
+        & h4{
+            margin:auto 6%;
+            font-size: 44px;
+            color: #e2e9f0;
+        }
+        & p{
+            margin:auto 6%;
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* 成员介绍 */
+.selection-cy-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: calc(var(--selection-wenhua-container-padding) / 2) 0;
+    box-sizing: border-box;
+    border-bottom-left-radius: 60px;
+    background-image: linear-gradient(45deg,#EAEFED 2%,#C0CBD9);
+}
+.selection-cy-container .selection-cy-container-box{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-top{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+    & .title{
+        font-size: var(--about-our-font-size);
+        font-weight: 400;
+    }
+
+    & .control{
+        width: 100px;
+        height: auto;
+        margin:auto 0 auto auto;
+    }
+
+    & .control a{
+        display: inline-block;
+        width: 39px;
+        height: 39px;
+        color: #00AF98;
+        font-size: 22px;
+        text-align: center;
+        line-height: 35px;
+        border:2px solid #dde0e0;
+        border-radius: 50%;
+    }
+
+    & .control a:active{
+        border:2px solid #b9bdbd;
+        color: #232928;
+    }
+}
+
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .swiper-slide{
+    margin-right: 2px;
+}
+
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom{
+    width: 100%;
+    & blockquote{
+        height: auto;
+        font-size: 28px;
+        font-weight: 500;
+        overflow: hidden;
+    }
+
+    & .quote{
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        height: 50%;
+        margin-top: 10%;
+       
+    }
+
+    & .quote img{
+        width: auto;
+        height: 155px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    & .quote .avatar{
+        width: 54%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    & .quote .avatar blockquote{
+        display: none;
+    }
+
+    & .quote .avatar strong{
+        font-size: 18px;
+        font-family: "SourceHanSansCN apple-system", BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    }
+}
+
+.selection-end-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    & .moblie{
+        color: white;
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.4;
+        transform: translateY(90px);
+        opacity: 0.1;
+    }
+
+    & .pc{
+        display: none;
+    }
+    & .img-moblie{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    & .img-pc{
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+.moblie-footer{
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(0deg,#edf2f1,#cbd5e2);
+    padding: 59px 0 45px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50px 50px 0 0;
+    transform: translateY(-75%);
+
+    & .com{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 14px;
+        color: rgba(34,37,39,.6);
+        font-family: Montserrat,apple-system,BlinkMacSystemFont,Helvetica,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+    }
+
+    & .link-box{
+        width: 95%;
+        margin: 17px auto;
+        font-size: 13px;
+        color: black;
+    }
+}
+
+.pc-footer{
+    display: none;
+}
+
+
+
+/* 适配大屏幕端 */
+@media only screen and (min-width: 769px){
+    #selection-menmian-container #selection-menmian{
+        width: 100%;
+        height: var(--selector-menmian-pc-height);
+        background-position-x: center;
+        background-position-y: 40px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-image: url("https://relx-website-new.oss-cn-zhangjiakou.aliyuncs.com//yueke/dc78e1a59391456f9ba641bba904ce49.jpg");
+    }
+
+    .selection-wenhua-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: var(--selection-wenhua-container-pc-padding) 0 calc(var(--selection-wenhua-container-pc-padding)/2);
+        box-sizing: border-box;
+    }
+
+    .selection-wenhua-container .selection-wenhua-item{
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        width: var(--selection-wenhua-item-pc-width);
+        margin:0 auto;
+        margin:0 auto calc(var(--selection-wenhua-item-width) / 50);
+    }
+
+    .selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box{
+        box-sizing: border-box;
+        width: 49%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        opacity: 0.1;
+        & img{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        & .selection-wenhua-item-box-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding: 14%;
+            color: rgb(253, 253, 253);
+
+            & img{
+                width: 119px;
+                height: auto;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+    
+            & p{
+                font-size: 14px;
+            }
+        }
+    
+    }
+    
+    .selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2){
+        margin-top: 0px;
+        width: 49%;
+        height: auto;
+        background-color: white;
+        
+        & .selection-wenhua-item-box-content{
+            & img{
+                width: 168px;
+                height: auto;
+                object-fit: cover;
+                margin-bottom: 30px;
+            }
+
+            & p{
+                font-size: 13px;
+                font-weight: 400;
+                color: #7b7b7b;
+                margin-bottom: 30px;
+            }
+        } 
+    }
+
+    .selection-wenhua-container .selection-wenhua-about-our{
+        width: var(--selection-wenhua-item-pc-width);
+        margin: 2vw auto 0;
+
+        & h2{
+            font-size: var(--about-our-pc-font-size);
+            font-weight: 500;
+            margin-bottom: 3vw;
+        }
+
+        & div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        & div .selection-wenhua-about-our-item{
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            height: auto;
+            margin: 8px 0;
+
+            border-radius: 12px;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        & div .selection-wenhua-about-our-item div p{
+            margin:10px 0;
+        }
+
+    }
+    .selection-jingli-our-container .selection-jingli-our-box{
+        width: var(--selection-jingli-our-pc-box-width);
+        margin-left: auto;
+        display: flex;
+
+        & .jingli-left-content{
+            width:30%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 0;
+            margin: 0;
+
+            & .title{
+                font-size: var(--about-our-pc-font-size);
+                font-weight: 500;
+                margin-bottom: auto;
+            }
+
+            & .control{
+                margin-left: 0;
+                margin-bottom: 0;              
+            }
+        }
+
+        & .jingli-right-content{
+            width: 100%;
+            padding-bottom: 22px;
+            & .swiper-wrapper{
+                height: 40vw;
+            }
+            & .swiper-wrapper .swiper-slide{
+                display: flex;
+                flex-direction: column;
+                width: calc(100%/3);
+                height: auto;
+                border-radius: 20px;
+                background-color: rgb(243, 246, 249);
+                margin-right: var(--jingli-slide-pc-margin-right);
+                overflow: hidden;
+        
+                & img{
+                    width: 100%;
+                    height: auto;
+                    margin-top: auto;
+                    object-fit: cover;
+                }
+        
+                & h4{
+                    margin:auto 6%;
+                    font-size: 44px;
+                    color: #e2e9f0;
+                }
+                & p{
+                    margin:auto 6%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .selection-cy-container{
+        padding: calc(var(--selection-wenhua-container-padding) / 4) 0;
+        border-bottom-right-radius: 100px;
+    }
+    .selection-cy-container .selection-cy-container-box{
+        width: 74vw;
+    }
+
+    .selection-cy-container .selection-cy-container-box .selection-cy-container-box-top{
+       
+            & .title{
+                font-size: var(--about-our-pc-font-size);
+                font-weight: 500;
+                margin-bottom: auto;
+            }
+        
+    }
+    .selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .swiper-slide{
+        & blockquote{
+            display: none;
+        }
+        & .quote{
+            align-items: start;
+            margin-top: 0;
+        }
+        & .quote img{
+            width: auto;
+            height: 235px;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        & .quote .avatar{
+            width: 100%;
+            height: 235px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 47px;
+        }
+        & .quote .avatar blockquote{
+            display: block;
+        }
+        & .quote .avatar strong{
+            margin-top: auto;
+        }
+    }
+
+    .selection-end-container{
+        position: relative;
+        width: 100%;
+        height: auto;
+        & .moblie{
+            display: none;
+            color: white;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+            font-weight: 400;
+            font-size: 22px;
+        }
+    
+        & .pc{
+            display: block;
+            color: white;
+            position: absolute;
+            top: 17%;
+            left: 20%;
+            font-weight: 400;
+            font-size: 2.292vw;
+            line-height: 1.4;
+            transform: translateY(90px);
+            opacity: 0.1;
+        }
+        & .img-moblie{
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        & .img-pc{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    }
+
+    .moblie-footer{
+        display: none;
+    }
+
+    .pc-footer{
+        display: block;
+        width: 100%;
+        background-image: linear-gradient(45deg,#edf2f1,#cbd5e2);
+        padding: 5.7291666667vw 0 2.6041666667vw;
+        border-radius: 7.2916666667vw 7.2916666667vw 0 0;
+        position: absolute;
+        transform: translateY(-98%);
+        font-size: 12px;
+        & .box{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin: 8.23vw auto 0 auto;
+
+            & a {
+                width: 15%;
+            }
+
+            & .com{
+                width: 40%;
+            }
+
+            & a img{
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1155px) {
+
+    .selection-jingli-our-container .selection-jingli-our-box .jingli-left-content{
+        & .title{
+            font-size: 38px;
+        }
+    }
+
+    .selection-cy-container .selection-cy-container-box .selection-cy-container-box-top{
+        & .title{
+            font-size: 38px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 956px) {
+
+    .selection-jingli-our-container .selection-jingli-our-box .jingli-left-content{
+        & .title{
+            font-size: 30px;
+        }
+    }
+    .selection-cy-container .selection-cy-container-box .selection-cy-container-box-top{
+        & .title{
+            font-size: 30px;
+        }
+
+    }
+
+}

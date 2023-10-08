@@ -1,0 +1,186 @@
+:root{
+    /* 适配移动端 */
+    --hd-topbar-height: 40px;
+    --hd-topbar-img-width: 160px;
+    --hd-wrapper-height: 70px;
+    --selector-menmian-height: 82vw;
+    --selection-wenhua-container-padding:16vw;
+    --selection-wenhua-item-width:93%;
+    --about-our-font-size: 32px; 
+    --selection-jingli-our-box-width: 95.7vw;
+    --selection-jingli-our-box-margin-left: 4.3vw;
+    --jingli-slide-margin-right: 16px;
+    
+    
+    /* 适配PC端 chrome浏览器 */
+    --hd-topbar-pc-height: 40px;
+    --hd-topbar-pc-img-width: 140px;
+    --hd-wrapper-pc-height: 100px;
+    --hd-wrapper-md-search-fontsize: 16px;
+    --selector-menmian-pc-height: 32.8125vw;
+    --selection-wenhua-container-pc-padding:7vw;
+    --selection-wenhua-item-pc-width:75%;
+    --selection-jingli-our-pc-box-width: 86.35vw;
+    --about-our-pc-font-size: 46px;
+    --jingli-slide-pc-margin-right: 36px;
+}
+
+/* 初始化页面样式 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* 将无须列表的默认样式去除 */
+ul li{
+    list-style: none;
+}
+
+/* 清除a标签默认样式 */
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.kefu{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 2vw;
+    background-color: rgb(238, 186, 146);
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    z-index: 9999;
+}
+
+.tip-container{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    & .tip-box{
+        width: 47%;
+        height: 56%;
+        box-sizing: border-box;
+        padding: 4% 0;
+        background-color: white;
+        margin: auto auto;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        & img{
+            width: 150px;
+            height: 40px;
+        }
+
+        & .title{
+            font-size: 24px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        & .content{
+            font-size: 20px;
+            color: #000;
+        }
+
+        & .btn{
+            width:60%;
+            display: flex;
+            justify-content: space-around;
+
+            & button{
+                width: 30%;
+                height: 40px;
+                background-color: rgba(0, 89, 78, 1);
+                border: none;
+                color: white;
+                border-radius: 25px;
+            }
+
+            & button:nth-child(2){
+                width: 50%;
+                background-color: rgba(15, 49, 43, 1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 877px){
+
+    .tip-container{
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    
+        & .tip-box{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 4% 0;
+            border-radius: 0;
+            background-color: white;
+            margin: auto auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    
+            & img{
+                width: 150px;
+                height: 40px;
+            }
+    
+            & .title{
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+            }
+    
+            & .content{
+                font-size: 20px;
+                color: #000;
+            }
+    
+            & .btn{
+                width:60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                & button{
+                    width: 30%;
+                    height: 40px;
+                    background-color: rgba(0, 89, 78, 1);
+                    border: none;
+                    color: white;
+                    border-radius: 25px;
+                }
+    
+                & button:nth-child(2){
+                    margin-top: 10%;
+                    width: 50%;
+                    background-color: rgba(15, 49, 43, 1);
+                }
+            }
+        }
+    }
+    
+}
