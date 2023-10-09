@@ -7,7 +7,7 @@ var doms = {
     jingli:document.querySelector(".selection-jingli-our-box"),
     jingliText:document.querySelector(".selection-jingli-our-box .jingli-left-content"),
     jingliBoxs:document.querySelectorAll(".selection-jingli-our-box .swiper-slide"),
-    cy:document.querySelector(".selection-cy-container-box"),
+    cy:document.querySelector(".selection-cy-container"),
     cybox:document.querySelector(".selection-cy-container .selection-cy-container-box"),
     endTexts:document.querySelectorAll(".animation-end-text")
 }
@@ -89,7 +89,7 @@ const observer3 = new IntersectionObserver((entries)=>{
             for(let i = 0;i<doms.jingliBoxs.length;i++){
                 if(doms.jingliBoxs[i].classList.contains(`right-to-left-animation${i}`)){
                     doms.jingliBoxs[i].classList.remove(`right-to-left-animation${i}`);
-                    doms.jingliBoxs[i].style.marginLeft = "50px";
+                    doms.jingliBoxs[i].style.transform = "translateX(50)";
                     doms.jingliBoxs[i].style.opacity = "0.1";
                 }
             }

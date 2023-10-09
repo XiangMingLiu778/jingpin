@@ -40,54 +40,56 @@
     overflow: hidden;
     position: relative;
     opacity: 0.1;
-    & img{
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-    }
-    & .selection-wenhua-item-box-content{
-        position: absolute;
-        top: 0;
-        left: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        padding: 14%;
-        color: rgb(253, 253, 253);
+}
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box .selection-wenhua-item-box-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 14%;
+    color: rgb(253, 253, 253);
 
-        & div{
-            position: relative;
-            top: 68%;
-            left: 0;
-            width: 100%;
 
-            & h2{
-                font-size: 34px;
-                font-weight: 400;
-                margin-bottom: 25px;
-            }
+}
 
-            & p{
-                font-size: 14px;
-                margin-bottom: 8px;
-            }
-        }
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box .selection-wenhua-item-box-content div{
+    position: relative;
+    top: 68%;
+    left: 0;
+    width: 100%;
 
-        & img{
-            width: 109px;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
+    
+}
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box .selection-wenhua-item-box-content div h2{
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
 
-        & p{
-            font-size: 14px;
-        }
-    }
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box .selection-wenhua-item-box-content div p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
 
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box .selection-wenhua-item-box-content img{
+    width: 109px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box .selection-wenhua-item-box-content p{
+    font-size: 14px;
 }
 
 .selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2){
@@ -95,84 +97,91 @@
     width: 100%;
     height: 370px;
     background-color: white;
-    & .selection-wenhua-item-box-content {
-        
-        & img{
-                width: 158px;
-                height: auto;
-                object-fit: cover;
-                margin-bottom: 20px;
-        }
+    
+}
 
-        & p{
-            font-size: 13px;
-            font-weight: 400;
-            color: #7b7b7b;
-            margin-bottom: 8px;
-        }
-        & div p{
-            color: #ffffff;
-            overflow-y: auto;
-        }
-    }
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2) .selection-wenhua-item-box-content {
+        
+    
+}
+
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2) .selection-wenhua-item-box-content img{
+    width: 158px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2) .selection-wenhua-item-box-content p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #7b7b7b;
+    margin-bottom: 8px;
+}
+
+.selection-wenhua-container .selection-wenhua-item .selection-wenhua-item-box:nth-child(2) .selection-wenhua-item-box-content div p{
+    color: #ffffff;
+    overflow-y: auto;
 }
 
 .selection-wenhua-container .selection-wenhua-about-our{
     width: var(--selection-wenhua-item-width);
     margin: 8vw auto 0;
 
-    & h2{
-        font-size: var(--about-our-font-size);
-        font-weight: 500;
-        margin-bottom: 6vw;
-        transform: translateY(90px);
-    }
-
-    & div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    & div .selection-wenhua-about-our-item{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 120px;
-        margin: 8px 0;
-        padding: 20px 40px;
-        -webkit-box-pack: start;
-        justify-content: flex-start;
-        border-radius: 12px;
-        background-color: white;
-
-    }
-
-    & div .selection-wenhua-about-our-item h5{
-        float: left;
-        font-size: 70px;
-        color: #00AF98;
-        font-weight: 400;
-        padding-right: 14px;
-        font-family: Montserrat,apple-system,BlinkMacSystemFont,Helvetica,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
-    }
-
-    & div .selection-wenhua-about-our-item div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    & div .selection-wenhua-about-our-item div p{
-        margin:5px 0;
-    }
-
-    & div .selection-wenhua-about-our-item div p span{
-        color: #00AF98;
-    }
+    
 
     
+}
+
+.selection-wenhua-container .selection-wenhua-about-our h2{
+    font-size: var(--about-our-font-size);
+    font-weight: 500;
+    margin-bottom: 6vw;
+    transform: translateY(90px);
+}
+
+.selection-wenhua-container .selection-wenhua-about-our div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.selection-wenhua-container .selection-wenhua-about-our div .selection-wenhua-about-our-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    margin: 8px 0;
+    padding: 20px 40px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    border-radius: 12px;
+    background-color: white;
+
+}
+
+.selection-wenhua-container .selection-wenhua-about-our div .selection-wenhua-about-our-item h5{
+    float: left;
+    font-size: 70px;
+    color: #00AF98;
+    font-weight: 400;
+    padding-right: 14px;
+    font-family: Montserrat,apple-system,BlinkMacSystemFont,Helvetica,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.selection-wenhua-container .selection-wenhua-about-our div .selection-wenhua-about-our-item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.selection-wenhua-container .selection-wenhua-about-our div .selection-wenhua-about-our-item div p{
+    margin:5px 0;
+}
+
+.selection-wenhua-container .selection-wenhua-about-our div .selection-wenhua-about-our-item div p span{
+    color: #00AF98;
 }
 
 .selection-jingli-our-container{
@@ -188,67 +197,72 @@
 .selection-jingli-our-container .selection-jingli-our-box .jingli-left-content{
         display: flex;
         width: 100%;
-        & .title{
-            font-size: var(--about-our-font-size);
-            font-weight: 500;
-            margin-bottom: 6vw;
-        }
+        
+}
+.selection-jingli-our-container .selection-jingli-our-box .jingli-left-content .title{
+    font-size: var(--about-our-font-size);
+    font-weight: 500;
+    margin-bottom: 6vw;
+}
 
-        & .control{
-            width: 100px;
-            height: auto;
-            margin:auto 0 auto auto;
-        }
+.selection-jingli-our-container .selection-jingli-our-box .jingli-left-content .control{
+    width: 100px;
+    height: auto;
+    margin:auto 0 auto auto;
+}
 
-        & .control a{
-            display: inline-block;
-            width: 39px;
-            height: 39px;
-            color: #00AF98;
-            font-size: 22px;
-            text-align: center;
-            line-height: 35px;
-            border:2px solid #dde0e0;
-            border-radius: 50%;
-        }
+.selection-jingli-our-container .selection-jingli-our-box .jingli-left-content .control a{
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    color: #00AF98;
+    font-size: 22px;
+    text-align: center;
+    line-height: 35px;
+    border:2px solid #dde0e0;
+    border-radius: 50%;
+}
 
-        & .control a:active{
-            border:2px solid #b9bdbd;
-            color: #232928;
-        }
+.selection-jingli-our-container .selection-jingli-our-box .jingli-left-content .control a:active{
+    border:2px solid #b9bdbd;
+    color: #232928;
 }
 
 .selection-jingli-our-container .selection-jingli-our-box .jingli-right-content{
     width: calc(var(--selection-jingli-our-box-width)-var(--selection-jingli-our-box-margin-left));
     padding-bottom: 45px;
-    & .swiper-wrapper .swiper-slide{
-        display: flex;
-        flex-direction: column;
-        width: 245px;
-        height: 416px;
-        border-radius: 20px;
-        background-color: rgb(243, 246, 249);
-        margin-right: var(--jingli-slide-margin-right);
-        overflow: hidden;
+    
 
-        & img{
-            width: 100%;
-            height: auto;
-            margin-top: auto;
-            object-fit: cover;
-        }
+}
 
-        & h4{
-            margin:auto 6%;
-            font-size: 44px;
-            color: #e2e9f0;
-        }
-        & p{
-            margin:auto 6%;
-            font-size: 14px;
-        }
-    }
+.selection-jingli-our-container .selection-jingli-our-box .jingli-right-content .swiper-wrapper .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    height: 416px;
+    border-radius: 20px;
+    background-color: rgb(243, 246, 249);
+    margin-right: var(--jingli-slide-margin-right);
+    overflow: hidden;
 
+    
+}
+
+.selection-jingli-our-container .selection-jingli-our-box .jingli-right-content .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    object-fit: cover;
+}
+
+.selection-jingli-our-container .selection-jingli-our-box .jingli-right-content .swiper-wrapper .swiper-slide h4{
+    margin:auto 6%;
+    font-size: 44px;
+    color: #e2e9f0;
+}
+.selection-jingli-our-container .selection-jingli-our-box .jingli-right-content .swiper-wrapper .swiper-slide p{
+    margin:auto 6%;
+    font-size: 14px;
 }
 
 /* 成员介绍 */
@@ -270,33 +284,34 @@
     display: flex;
     width: 100%;
     margin-bottom: 10%;
-    & .title{
-        font-size: var(--about-our-font-size);
-        font-weight: 400;
-    }
+    
+}
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-top .title{
+    font-size: var(--about-our-font-size);
+    font-weight: 400;
+}
 
-    & .control{
-        width: 100px;
-        height: auto;
-        margin:auto 0 auto auto;
-    }
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-top .control{
+    width: 100px;
+    height: auto;
+    margin:auto 0 auto auto;
+}
 
-    & .control a{
-        display: inline-block;
-        width: 39px;
-        height: 39px;
-        color: #00AF98;
-        font-size: 22px;
-        text-align: center;
-        line-height: 35px;
-        border:2px solid #dde0e0;
-        border-radius: 50%;
-    }
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-top .control a{
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    color: #00AF98;
+    font-size: 22px;
+    text-align: center;
+    line-height: 35px;
+    border:2px solid #dde0e0;
+    border-radius: 50%;
+}
 
-    & .control a:active{
-        border:2px solid #b9bdbd;
-        color: #232928;
-    }
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-top .control a:active{
+    border:2px solid #b9bdbd;
+    color: #232928;
 }
 
 .selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .swiper-slide{
@@ -305,80 +320,85 @@
 
 .selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom{
     width: 100%;
-    & blockquote{
-        height: auto;
-        font-size: 28px;
-        font-weight: 500;
-        overflow: hidden;
-    }
+    
+}
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom blockquote{
+    height: 130px;
+    font-size: 23px;
+    font-family: "SourceHanSansCN apple-system", BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 
-    & .quote{
-        display: flex;
-        align-items: end;
-        justify-content: start;
-        height: 50%;
-        margin-top: 10%;
-       
-    }
+    font-weight: 350;
+    overflow: hidden;
+}
 
-    & .quote img{
-        width: auto;
-        height: 155px;
-        object-fit: cover;
-        border-radius: 30px;
-    }
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .quote{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 50%;
+    margin-top: 10%;
+   
+}
 
-    & .quote .avatar{
-        width: 54%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-    }
-    & .quote .avatar blockquote{
-        display: none;
-    }
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .quote img{
+    width: auto;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 30px;
+}
 
-    & .quote .avatar strong{
-        font-size: 18px;
-        font-family: "SourceHanSansCN apple-system", BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    }
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .quote .avatar{
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .quote .avatar blockquote{
+    display: none;
+}
+
+.selection-cy-container .selection-cy-container-box .selection-cy-container-box-bottom .quote .avatar strong{
+    font-size: 18px;
+    font-family: "SourceHanSansCN apple-system", BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 .selection-end-container{
     position: relative;
     width: 100%;
     height: auto;
-    & .moblie{
-        color: white;
-        position: absolute;
-        top: 12%;
-        left: 5%;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 1.4;
-        transform: translateY(90px);
-        opacity: 0.1;
-    }
-
-    & .pc{
-        display: none;
-    }
-    & .img-moblie{
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-    }
-
-    & .img-pc{
-        display: none;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-    }
+   
 }
+.selection-end-container .moblie{
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    transform: translateY(90px);
+    opacity: 0.1;
+}
+
+.selection-end-container .pc{
+    display: none;
+}
+.selection-end-container .img-moblie{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.selection-end-container .img-pc{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
 
 .moblie-footer{
     display: block;
@@ -390,20 +410,22 @@
     border-radius: 50px 50px 0 0;
     transform: translateY(-75%);
 
-    & .com{
-        width: 85%;
-        margin: 0 auto;
-        font-size: 14px;
-        color: rgba(34,37,39,.6);
-        font-family: Montserrat,apple-system,BlinkMacSystemFont,Helvetica,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
-    }
+    
+}
 
-    & .link-box{
-        width: 95%;
-        margin: 17px auto;
-        font-size: 13px;
-        color: black;
-    }
+.moblie-footer .com{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: rgba(34,37,39,.6);
+    font-family: Montserrat,apple-system,BlinkMacSystemFont,Helvetica,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.moblie-footer .link-box{
+    width: 95%;
+    margin: 17px auto;
+    font-size: 13px;
+    color: black;
 }
 
 .pc-footer{
@@ -642,6 +664,10 @@
         }
         & .quote .avatar blockquote{
             display: block;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: "SourceHanSansCN apple-system", BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
         }
         & .quote .avatar strong{
             margin-top: auto;

@@ -76,7 +76,7 @@
     animation-iteration-count: 1;
 }
 .right-to-left-animation0{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -84,7 +84,7 @@
 }
 
 .right-to-left-animation1{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -92,7 +92,7 @@
 }
 
 .right-to-left-animation2{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 2.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -100,7 +100,7 @@
 }
 
 .right-to-left-animation3{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 1.6s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -108,7 +108,7 @@
 }
 
 .right-to-left-animation4{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -116,7 +116,7 @@
 }
 
 .right-to-left-animation5{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 2.4s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -124,7 +124,7 @@
 }
 
 .right-to-left-animation6{
-    animation-name: right-to-left-animateq;
+    animation-name: right-to-left-animate;
     animation-duration: 2.8s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
